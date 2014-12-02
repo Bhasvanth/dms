@@ -1,10 +1,11 @@
 <fieldset>
     <legend>Search Domains</legend>
+	<form method="POST">
 	<table>
 	    <tr>
 		    <td>Name</td>
 		    <td>
-			    <select name="" id="">
+			    <select name="name_condition" id="name_condition">
 				    <option value="starts-with">starts with</option>
 				    <option value="contains" selected>contains</option>
 				    <option value="ends-with">ends with</option>
@@ -32,11 +33,11 @@
 		<tr>
 		    <td>Start Date</td>
 		    <td>
-			    <input type="text" name="start-date" id="start-date" /> 
+			    <input type="text" name="start_date" id="start_date" /> 
 			</td>
 			<td>End Date</td>
 		    <td>
-			    <input type="text" name="end-date" id="end-date" /> 
+			    <input type="text" name="end_date" id="end_date" /> 
 			</td>
 		</tr>
 		<tr>
@@ -72,4 +73,5 @@
     <?php endforeach; ?>
     <?php unset($domain); ?>
 </table>
+</form>
 </fieldset>
